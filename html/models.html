@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&family=Roboto+Slab&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../styles/style.css">
+        <link rel="stylesheet" type="text/css" href="../styles/navbar.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <script>
+            $(function () {
+                $("[data-toggle='tooltip']").tooltip()
+            })
+        </script>
+        <title>Models – ManufacturingNet</title>
+    </head>
+    <body>
+        <div class="shadow" id="navbar">
+            <nav class="navbar navbar-expand-sm navbar-dark">
+                <a class="navbar-brand d-block d-sm-none" href="#">ManufacturingNet</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Welcome</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="datasets.html">Datasets</a>
+                        </li>
+                        <li class="nav-item dropdown active">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Models</a>
+                            <div class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#shallowLearningHeader">Shallow</a>
+                                <a class="dropdown-item" href="#deepLearningHeader">Deep</a>
+                                <a class="dropdown-item" href="#featurizersHeader">Featurizers</a>
+                                <a class="dropdown-item" href="#">All</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="results.html">Results</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="jumbotron jumbotron-fluid text-center shadow-lg heading">
+            <h1>Models</h1>
+        </div>
+        <div class="jumbotron jumbotron-fluid section-header text-center text-white bg-dark">
+            <h2>Shallow Learning Models</h2>
+        </div>
+        <div class="card-columns">
+            <div class="card mb-3 bg-dark text-white mx-auto">
+                <div class="card-header">
+                    <h3>Linear Regression</h3>
+                </div>
+                <div class="row no-gutters">
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            Determines coefficients for minimizing the residuals between the observations and the
+                            model's linear approximation.
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="https://creativecommons.org/licenses/by-sa/3.0">
+                            <img
+                                class="card-img model-photo" src="../images/models/linear_regression.png" alt="Image of linear regression line"
+                                data-toggle="tooltip" data-placement="top" title="Thomas.haslwanter / CC BY-SA (click image for license)"
+                            >
+                        </a>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a role="button" class="btn view-button" href="https://github.com/BaratiLab/ManufacturingNet/blob/master/ManufacturingNet/shallow-learning-methods/linear_regression.py">
+                        View on GitHub
+                    </a>
+                    <span class="badge badge-light">Regression</span>
+                    <span class="badge badge-light" data-toggle="tooltip" data-html="true" data-placement="top" title="Algorithm is deterministic in prediction, but <b>not</b> in model building.">
+                        Deterministic
+                    </span>
+                </div>
+            </div>
+            <div class="card mb-3 bg-dark text-white mx-auto">
+                <div class="card-header">
+                    <h3>Logistic Regression</h3>
+                </div>
+                <div class="row no-gutters">
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            Uses a logistic function to model a binary dependent variable based on its independent
+                            variable(s).
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="https://creativecommons.org/licenses/by-sa/3.0">
+                            <img
+                                class="card-img model-photo" src="../images/models/logistic_regression.png" alt="Picture of logistic curve"
+                                data-toggle="tooltip" data-placement="top" title="Maksim / CC BY-SA (click image for license)"
+                            >
+                        </a>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a role="button" class="btn view-button" href="https://github.com/BaratiLab/ManufacturingNet/blob/master/ManufacturingNet/shallow-learning-methods/logistic_regression.py">
+                        View on GitHub
+                    </a>
+                    <span class="badge badge-light">Classification</span>
+                    <span class="badge badge-light">Regression</span>
+                    <span class="badge badge-light" data-toggle="tooltip" data-html="true" data-placement="top" title="Algorithm is deterministic in prediction, but <b>not</b> in model building.">
+                        Deterministic
+                    </span>
+                </div>
+            </div>
+            <div class="card mb-3 bg-dark text-white mx-auto">
+                <div class="card-header">
+                    <h3>Multi-Layer Perceptron (MLP) Classifier</h3>
+                </div>
+                <div class="row no-gutters">
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            Neural network model that can use non-linear function approximators for multi-label
+                            classification.
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="https://creativecommons.org/licenses/by-sa/3.0">
+                            <img
+                                class="card-img model-photo" src="../images/models/mlp.png" alt="Diagram of multi-layer perceptron"
+                                data-toggle="tooltip" data-placement="top" title="Sky99 / CC BY-SA (image modified; click it for license)"
+                            >
+                        </a>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a role="button" class="btn view-button" href="https://github.com/BaratiLab/ManufacturingNet/blob/master/ManufacturingNet/shallow-learning-methods/mlp.py">
+                        View on GitHub
+                    </a>
+                    <span class="badge badge-light">Classification</span>
+                    <span class="badge badge-light" data-toggle="tooltip" data-html="true" data-placement="top" title="Algorithm is deterministic in prediction, but <b>not</b> in model building.">
+                        Deterministic
+                    </span>
+                </div>
+            </div>
+            <div class="card mb-3 bg-dark text-white mx-auto">
+                <div class="card-header">
+                    <h3>Random Forest</h3>
+                </div>
+                <div class="row no-gutters">
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            Uses an ensemble of decision trees built from the training set to provide an average
+                            prediction for the dependent variable.
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="https://creativecommons.org/licenses/by-sa/3.0">
+                            <img
+                                class="card-img model-photo" src="../images/models/random_forest.png" alt="Diagram of random forest"
+                                data-toggle="tooltip" data-placement="top" title="Venkata Jagannath / CC BY-SA (image modified; click it for license)"
+                            >
+                        </a>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a role="button" class="btn view-button" href="https://github.com/BaratiLab/ManufacturingNet/blob/master/ManufacturingNet/shallow-learning-methods/random_forest.py">
+                        View on GitHub
+                    </a>
+                    <span class="badge badge-light">Classification</span>
+                    <span class="badge badge-light">Regression</span>
+                    <span class="badge badge-light" data-toggle="tooltip" data-html="true" data-placement="top" title="Algorithm is deterministic in prediction, but <b>not</b> in model building.">
+                        Deterministic
+                    </span>
+                </div>
+            </div>
+            <div class="card mb-3 bg-dark text-white mx-auto">
+                <div class="card-header">
+                    <h3>Support Vector Machine (SVM)</h3>
+                </div>
+                <div class="row no-gutters">
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            Provides effective and efficient supervised learning in high-dimensional spaces with
+                            support for multiple kernel functions. Provides multiple classification
+                            (SVC, NuSVC, LinearSVC) and regression models (SVR, NuSVR, LinearSVR).
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="https://creativecommons.org/licenses/by-sa/3.0">
+                            <img
+                                class="card-img model-photo" src="../images/models/svm.png" alt="Image of support vector machine"
+                                data-toggle="tooltip" data-placement="top" title="Cyc / CC BY-SA (click image for license)"
+                            >
+                        </a>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a role="button" class="btn view-button" href="https://github.com/BaratiLab/ManufacturingNet/blob/master/ManufacturingNet/shallow-learning-methods/svm.py">
+                        View on GitHub
+                    </a>
+                    <span class="badge badge-light">Classification</span>
+                    <span class="badge badge-light">Regression</span>
+                    <span class="badge badge-light" data-toggle="tooltip" data-html="true" data-placement="top" title="Algorithm is deterministic in prediction, but <b>not</b> in model building.">
+                        Deterministic
+                    </span>
+                </div>
+            </div>
+            <div class="card mb-3 bg-dark text-white mx-auto">
+                <div class="card-header">
+                    <h3>XGBoost</h3>
+                </div>
+                <div class="row no-gutters">
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            Provides parallel tree boosting (also known as GBDT, or GBM) under the Gradient Boosting
+                            framework.
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="https://creativecommons.org/licenses/by-sa/3.0">
+                            <img
+                                class="card-img model-photo" src="../images/models/xgboost.png" alt="Diagram of gradient boosting"
+                                data-toggle="tooltip" data-placement="top" title="SeattleDataGuy / CC BY-SA (click image for license)"
+                            >
+                        </a>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a role="button" class="btn view-button" href="https://github.com/BaratiLab/ManufacturingNet/blob/master/ManufacturingNet/shallow-learning-methods/xgb.py">
+                        View on GitHub
+                    </a>
+                    <span class="badge badge-light">Classification</span>
+                    <span class="badge badge-light">Regression</span>
+                    <span class="badge badge-light" data-toggle="tooltip" data-html="true" data-placement="top" title="Algorithm is deterministic in prediction, but <b>not</b> in model building.">
+                        Deterministic
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="jumbotron jumbotron-fluid section-header text-center text-white" id="deepLearningHeader">
+            <h2>Deep Learning Models</h2>
+        </div>
+        <div class="card-columns" id="deepLearning">
+            <div class="card mb-3 text-white mx-auto">
+                <div class="card-header">
+                    <h3>Convolutional Neural Network (CNN)</h3>
+                </div>
+                <div class="row no-gutters">
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            Deep neural network consisting of multiple hidden layers. Excels at image classification.
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="https://creativecommons.org/licenses/by-sa/3.0">
+                            <img
+                                class="card-img model-photo" src="../images/models/cnn.png" alt="Diagram of convolutional neural network"
+                                data-toggle="tooltip" data-placement="top" title="Cecbur / CC BY-SA (image modified; click it for license)"
+                            >
+                        </a>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a role="button" class="btn view-button" href="">
+                        View on GitHub
+                    </a>
+                    <span class="badge badge-light">Classification</span>
+                    <span class="badge badge-light">Regression</span>
+                    <span class="badge badge-light" data-toggle="tooltip" data-html="true" data-placement="top" title="Algorithm is deterministic in prediction, but <b>not</b> in model building.">
+                        Deterministic
+                    </span>
+                </div>
+            </div>
+            <div class="card mb-3 text-white mx-auto">
+                <div class="card-header">
+                    <h3>CNN Long Short-Term Memory (CNN-LSTM)</h3>
+                </div>
+                <div class="row no-gutters">
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            Uses CNN layers in combination with LSTMs for sequence prediction involving spatial input.
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="https://creativecommons.org/licenses/by-sa/3.0">
+                            
+                        </a>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a role="button" class="btn view-button" href="">
+                        View on GitHub
+                    </a>
+                    <span class="badge badge-light">Classification</span>
+                    <span class="badge badge-light">Regression</span>
+                    <span class="badge badge-light" data-toggle="tooltip" data-html="true" data-placement="top" title="Algorithm is deterministic in prediction, but <b>not</b> in model building.">
+                        Deterministic
+                    </span>
+                </div>
+            </div>
+            <div class="card mb-3 text-white mx-auto">
+                <div class="card-header">
+                    <h3>Generative Adversarial Network (GAN)</h3>
+                </div>
+                <div class="row no-gutters">
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            Uses two sub-models — one that generates artificial data and one that discriminates between
+                            artificial and genuine data — to learn to generate realistic examples.
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="https://creativecommons.org/licenses/by-sa/3.0">
+                            
+                        </a>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a role="button" class="btn view-button" href="">
+                        View on GitHub
+                    </a>
+                    <span class="badge badge-light">Classification</span>
+                    <span class="badge badge-light">Regression</span>
+                    <span class="badge badge-light" data-toggle="tooltip" data-html="true" data-placement="top" title="Algorithm is deterministic in prediction, but <b>not</b> in model building.">
+                        Deterministic
+                    </span>
+                </div>
+            </div>
+            <div class="card mb-3 text-white mx-auto">
+                <div class="card-header">
+                    <h3>Multi-Layer Perceptron (MLP)</h3>
+                </div>
+                <div class="row no-gutters">
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            Neural network model that can use non-linear function approximators for classification or regression.
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="https://creativecommons.org/licenses/by-sa/3.0">
+                            <img
+                                class="card-img model-photo" src="../images/models/mlp.png" alt="Diagram of multi-layer perceptron"
+                                data-toggle="tooltip" data-placement="top" title="Sky99 / CC BY-SA (image modified; click it for license)"
+                            >
+                        </a>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a role="button" class="btn view-button" href="">
+                        View on GitHub
+                    </a>
+                    <span class="badge badge-light">Classification</span>
+                    <span class="badge badge-light">Regression</span>
+                    <span class="badge badge-light" data-toggle="tooltip" data-html="true" data-placement="top" title="Algorithm is deterministic in prediction, but <b>not</b> in model building.">
+                        Deterministic
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="jumbotron jumbotron-fluid section-header text-center text-white" id="featurizersHeader">
+            <h2>Featurizers</h2>
+            <a role="button" class="btn view-button mx-auto" id="viewFeaturizers" href="https://github.com/BaratiLab/ManufacturingNet/blob/master/ManufacturingNet/Featurization_and_preprocessing/Featurization.py">
+                View on GitHub
+            </a>
+        </div>
+        <div class="card-columns" id="featurizers">
+            <div class="card text-white mx-auto">
+                <div class="card-header">
+                    <h3>Absolute Mean</h3>
+                </div>
+                <div class="card-body text-center">
+                    The arithmetic mean of all absolute values in a given set of numbers.
+                </div>
+            </div>
+            <div class="card text-white mx-auto">
+                <div class="card-header">
+                    <h3>Clearance Factor</h3>
+                </div>
+                <div class="card-body text-center">
+                    The peak value divided by the squared mean value of the square roots of the absolute amplitudes.
+                </div>
+            </div>
+            <div class="card text-white mx-auto">
+                <div class="card-header">
+                    <h3>Crest Factor</h3>
+                </div>
+                <div class="card-body text-center">
+                    The ratio of the peak value to the root mean square value of a waveform. Indicates how extreme the peaks of a wave are.
+                </div>
+            </div>
+            <div class="card text-white mx-auto">
+                <div class="card-header">
+                    <h3>Impulse Factor</h3>
+                </div>
+                <div class="card-body text-center">
+                    The ratio of the maximum absolute value to the absolute mean of a given set of numbers.
+                </div>
+            </div>
+            <div class="card text-white mx-auto">
+                <div class="card-header">
+                    <h3>Kurtosis</h3>
+                </div>
+                <div class="card-body text-center">
+                    A statistical measure of how heavily the tails of a distribution differ from the tails of a normal distribution.
+                </div>
+            </div>
+            <div class="card text-white mx-auto">
+                <div class="card-header">
+                    <h3>Max</h3>
+                </div>
+                <div class="card-body text-center">
+                    The largest number in a set of numbers.
+                </div>
+            </div>
+            <div class="card text-white mx-auto">
+                <div class="card-header">
+                    <h3>Mean</h3>
+                </div>
+                <div class="card-body text-center">
+                    The sum of all numbers in a given set divided by the total number of data points.
+                </div>
+            </div>
+            <div class="card text-white mx-auto">
+                <div class="card-header">
+                    <h3>Median</h3>
+                </div>
+                <div class="card-body text-center">
+                    In an odd number of ascending observations, the median is the middle value. In an even number of ascending
+                    observations, the median is the average of the two middle values.
+                </div>
+            </div>
+            <div class="card text-white mx-auto">
+                <div class="card-header">
+                    <h3>Min</h3>
+                </div>
+                <div class="card-body text-center">
+                    The smallest number in a set of numbers.
+                </div>
+            </div>
+            <div class="card text-white mx-auto">
+                <div class="card-header">
+                    <h3>Peak-to-Peak</h3>
+                </div>
+                <div class="card-body text-center">
+                    The difference between the maximum and minimum numbers in a set of numbers.
+                </div>
+            </div>
+            <div class="card text-white mx-auto">
+                <div class="card-header">
+                    <h3>Root Mean Square (RMS)</h3>
+                </div>
+                <div class="card-body text-center">
+                    The square root of the mean of the squares of all numbers in a set.
+                </div>
+            </div>
+            <div class="card text-white mx-auto">
+                <div class="card-header">
+                    <h3>Shape Factor</h3>
+                </div>
+                <div class="card-body text-center">
+                    The ratio of the root mean square to the absolute mean of a given set of numbers.
+                </div>
+            </div>
+            <div class="card text-white mx-auto">
+                <div class="card-header">
+                    <h3>Skewness</h3>
+                </div>
+                <div class="card-body text-center">
+                    The statistical measure of the asymmetry of a distribution of real-valued observations about the mean.
+                </div>
+            </div>
+            <div class="card text-white mx-auto">
+                <div class="card-header">
+                    <h3>Standard Deviation (Std)</h3>
+                </div>
+                <div class="card-body text-center">
+                    The statistical measure of the spread of a set of values. A low standard deviation indicates the values tend
+                    to be close to the mean of the set, while a high standard deviation indicates the values are spread out
+                    over a wider range.
+                </div>
+            </div>
+            <div class="card text-white mx-auto">
+                <div class="card-header">
+                    <h3>Variance</h3>
+                </div>
+                <div class="card-body text-center">
+                    The statistical measure of how much a random variable differs from its expected value. Variation is
+                    the average of the squares of the differences between each observation and the expected value; in other words,
+                    variance is the square of the standard deviation.
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

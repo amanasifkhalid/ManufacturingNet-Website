@@ -1,0 +1,192 @@
+body {
+    padding-bottom: 5%;
+}
+
+.jumbotron {
+    background-color: #ffffff;
+}
+
+.btn-outline-primary {
+    color: #4d4d4d;
+    border-color: #4d4d4d;
+}
+
+.btn-outline-primary:hover {
+    color: #ffffff;
+    border-color: #cc002b;
+    background-color: #cc002b;
+}
+
+h1 {
+    font-family: "Open Sans", sans-serif;
+}
+
+.btn {
+    font-family: "Open Sans", sans-serif;
+}
+
+h2, h3 {
+    font-family: "Roboto Slab", serif;
+}
+
+h6 {
+    font-family: "Open Sans", sans-serif;
+}
+
+a, .btn-link {
+    color: #8d0016;
+}
+
+a:hover, .btn-link:hover {
+    color: #cc002b;
+}
+
+.bg-red {
+    background-color: #8d0016;
+    color: #ffffff;
+}
+
+.view-button {
+    margin-right: 1%;
+    background-color: #8d0016;
+    color: #ffffff;
+}
+
+.view-button:hover {
+    background-color: #ffffff;
+    color: #8d0016;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+}
+
+#title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 4%;
+}
+
+#title h1 {
+    font-size: 10vw;
+}
+
+#subtitle {
+    padding-bottom: 5%;
+}
+
+.heading {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/tartan.png");
+    background-attachment: fixed;
+}
+
+.heading h1 {
+    color: #ffffff;
+}
+
+.card-columns {
+    margin: 2%;
+}
+
+.section-header {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#deepLearningHeader {
+    background-color: #174b3f;
+}
+
+#deepLearning .card {
+    background-color: #174b3f;
+}
+
+#featurizersHeader {
+    background-color: #032d40;
+}
+
+#featurizers .card {
+    background-color: #032d40;
+}
+
+#viewFeaturizers {
+    margin-top: 1%;
+}
+
+.card-header {
+    font-family: "Open Sans", sans-serif;
+}
+
+.email {
+    color: #66BF8C;
+}
+
+.email:hover {
+    color: #e6e3c4;
+}
+
+.copy {
+    background-color: #66BF8C;
+    color: #ffffff;
+}
+
+.linkedin {
+    background-color: #0072b1;
+    color: #ffffff;
+}
+
+.linkedin:hover, .copy:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.badge-light:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.result-columns {
+    column-count: 2;
+}
+
+.result-columns .card {
+    width: 75%;
+}
+
+.result-card {
+    width: 40%;
+}
+
+@media (max-width: 575px) {
+    .result-columns .card {
+        width: 96%;
+        margin: 2% auto;
+    }
+}
+
+@media (max-width: 1919px) {
+    .card-columns {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 1000px) {
+    .card-columns {
+        column-count: 1;
+    }
+
+    .result-card {
+        width: 92%;
+    }
+}
+
+@media (max-width: 767px) {
+    .profile-photo, .model-photo {
+        display: none;
+    }
+
+    .card-body {
+        text-align: center;
+    }
+}
