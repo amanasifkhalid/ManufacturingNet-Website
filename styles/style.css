@@ -2,6 +2,19 @@ body {
     padding-bottom: 5%;
 }
 
+footer {
+    margin-top: 5%;
+}
+
+#about {
+    margin: 5%;
+}
+
+.logo {
+    max-width: 150px;
+    width: 20%;
+}
+
 .jumbotron {
     background-color: #ffffff;
 }
@@ -127,8 +140,13 @@ p {
 }
 
 .copy {
-    background-color: #66BF8C;
+    background-color: #8d0016;
     color: #ffffff;
+}
+
+.copy:hover {
+    background-color: #ffffff;
+    color: #8d0016;
 }
 
 .linkedin {
@@ -136,9 +154,9 @@ p {
     color: #ffffff;
 }
 
-.linkedin:hover, .copy:hover {
+.linkedin:hover {
     background-color: #ffffff;
-    color: #000000;
+    color: #032d40;
 }
 
 .badge-light:hover {
@@ -171,13 +189,23 @@ p {
     }
 }
 
-@media (max-width: 1000px) {
+@media (min-width: 1919px) {
+    #aboutColumns {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 1100px) {
     .card-columns {
         column-count: 1;
     }
 
     .result-card {
         width: 92%;
+    }
+
+    #aboutColumns {
+        text-align: center;
     }
 }
 
