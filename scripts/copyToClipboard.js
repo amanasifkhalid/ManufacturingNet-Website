@@ -1,7 +1,1 @@
-function copyToClipboard(text) {
-    var $temp = $("<input>");
-    $("body").append($temp);
-    $temp.val(text).select();
-    document.execCommand("copy");
-    $temp.remove();
-}
+function copyToClipboard(o){var e=$("<input>");$("body").append(e),e.val(o).select(),document.execCommand("copy"),e.remove()}
